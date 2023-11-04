@@ -19,7 +19,7 @@ float k3(float x, float y = 0) {
 	return h * diff_Fun(x + 0.5f * h, y + 0.5f * k2(x, y));
 }
 
-float k4(float x, float y = 0) {
+float k4(float x, float y= 0) {
 	return h * diff_Fun(x + h, y + k3(x, y));
 }
 
